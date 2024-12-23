@@ -174,6 +174,19 @@ describe('signInWithRedirect', () => {
 		);
 	});
 
+	it('uses extra query parameters when specified', async () => {
+		const expectedDefaultProvider = 'COGNITO';
+		const exptedParamKey = 'customParam';
+		const expectedParamValue = 'object';
+		await signInWithRedirect({
+			extraQueryParams: { customParam: expectedParamValue },
+		});
+		const [oauthUrl] = mockOpenAuthSession.mock.calls[0];
+		expect(oauthUrl).toStrictEqual(
+			`https://oauth.domain.com/oauth2/authorize?redirect_uri=http%3A%2F%2Flocalhost%3A3000%2F&response_type=code&client_id=userPoolClientId&identity_provider=${expectedDefaultProvider}&scope=phone%20email%20openid%20profile%20aws.cognito.signin.user.admin&state=oauth_state&code_challenge=code_challenge&code_challenge_method=S256&${exptedParamKey}=${expectedParamValue}`,
+		);
+	});
+
 	it('uses custom provider when specified', async () => {
 		const expectedCustomProvider = 'PieAuth';
 		await signInWithRedirect({ provider: { custom: expectedCustomProvider } });
