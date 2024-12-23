@@ -1,6 +1,5 @@
 {
 	"name": "@bpagoagadev/aws-amplify-monorepo",
-	"private": "false",
 	"version": "0.1.31",
 	"description": "",
 	"scripts": {
