@@ -1,6 +1,6 @@
 {
 	"name": "@bpagoagadev/auth",
-	"version": "6.9.2",
+	"version": "6.9.3",
 	"description": "Auth category of aws-amplify",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.mjs",
