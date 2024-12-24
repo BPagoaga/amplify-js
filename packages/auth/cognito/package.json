@@ -1,5 +1,5 @@
 {
-	"name": "@aws-amplify/auth/cognito",
+	"name": "@bpagoagadev/auth/cognito",
 	"main": "../dist/cjs/providers/cognito/index.js",
 	"react-native": "../src/providers/cognito/index.ts",
 	"browser": "../dist/esm/providers/cognito/index.mjs",
