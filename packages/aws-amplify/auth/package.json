@@ -1,5 +1,5 @@
 {
-	"name": "bpagoagadev/auth",
+	"name": "bpagoagadev-aws-amplify/auth",
 	"main": "../dist/cjs/auth/index.js",
 	"react-native": "../src/auth/index.ts",
 	"browser": "../dist/esm/auth/index.mjs",

@@ -1,5 +1,5 @@
 {
-	"name": "aws-amplify/auth/cognito/server",
+	"name": "bpagoagadev-aws-amplify/auth/cognito/server",
 	"main": "../../../dist/cjs/auth/cognito/server/index.js",
 	"browser": "../../../dist/esm/auth/cognito/server/index.mjs",
 	"module": "../../../dist/esm/auth/cognito/server/index.mjs",
