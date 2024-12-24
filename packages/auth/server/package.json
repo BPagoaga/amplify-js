@@ -1,5 +1,5 @@
 {
-	"name": "@aws-amplify/auth/server",
+	"name": "@bpagoagadev/auth/server",
 	"types": "../dist/esm/server.d.ts",
 	"main": "../dist/cjs/server.js",
 	"module": "../dist/esm/server.mjs",
