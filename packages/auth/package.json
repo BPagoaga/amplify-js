@@ -1,5 +1,5 @@
 {
-	"name": "@bpagoagadev-aws-amplify/auth",
+	"name": "@bpagoagadev/auth",
 	"version": "6.11.8",
 	"description": "Auth category of aws-amplify",
 	"main": "./dist/cjs/index.js",
