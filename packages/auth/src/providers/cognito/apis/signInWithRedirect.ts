@@ -25,6 +25,7 @@ import {
 } from '../utils/oauth';
 import { createOAuthError } from '../utils/oauth/createOAuthError';
 import { listenForOAuthFlowCancellation } from '../utils/oauth/cancelOAuthFlow';
+import { ExtraQueryParameters } from '../../../types/inputs';
 
 /**
  * Signs in a user with OAuth. Redirects the application to an Identity Provider.
@@ -116,6 +117,7 @@ const oauthSignIn = async ({
 			code_challenge: toCodeChallenge(),
 			code_challenge_method: method,
 		}),
+		...extraQueryParams,
 	})
 		.map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
 		.join('&');

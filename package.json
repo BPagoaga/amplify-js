@@ -1,7 +1,7 @@
 {
 	"name": "aws-amplify-monorepo",
 	"private": true,
-	"version": "0.1.30",
+	"version": "0.1.31",
 	"description": "",
 	"scripts": {
 		"setup-dev": "yarn && yarn bootstrap && yarn link-all && yarn build",
@@ -66,9 +66,9 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/aws-amplify/amplify-js.git"
+		"url": "https://github.com/BPagoaga/amplify-js.git"
 	},
-	"author": "Amazon Web Services",
+	"author": "bernard.pagoaga.dev@gmail.com",
 	"license": "Apache-2.0",
 	"bugs": {
 		"url": "https://github.com/aws-amplify/amplify-js/issues"
@@ -134,14 +134,13 @@
 	"resolutions": {
 		"@types/babel__traverse": "7.20.0",
 		"path-scurry": "1.10.0",
-		"**/glob/minipass": "6.0.2",
 		"nx": "16.7.0",
 		"xml2js": "0.5.0",
-		"tar": "6.2.1",
-		"**/cross-spawn": "7.0.5"
+		"tar": "6.2.1"
 	},
 	"overrides": {
 		"tar": "6.2.1",
 		"cross-spawn": "7.0.5"
-	}
+	},
+	"packageManager": "yarn@4.6.0"
 }

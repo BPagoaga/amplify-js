@@ -1,6 +1,6 @@
 {
-	"name": "@aws-amplify/auth",
-	"version": "6.10.1",
+	"name": "@bpagoagadev/auth",
+	"version": "6.11.8",
 	"description": "Auth category of aws-amplify",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.mjs",
@@ -74,7 +74,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/aws-amplify/amplify-js.git"
+		"url": "https://github.com/BPagoaga/amplify-js.git"
 	},
 	"author": "Amazon Web Services",
 	"license": "Apache-2.0",
@@ -96,7 +96,8 @@
 		"tslib": "^2.5.0"
 	},
 	"peerDependencies": {
-		"@aws-amplify/core": "^6.1.0"
+		"@aws-amplify/core": "^6.1.0",
+		"@capacitor/browser": "^4.0.0"
 	},
 	"devDependencies": {
 		"@aws-amplify/core": "6.9.2",
