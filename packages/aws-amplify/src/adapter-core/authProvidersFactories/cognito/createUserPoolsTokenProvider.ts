@@ -5,7 +5,7 @@ import {
 	DefaultTokenStore,
 	TokenOrchestrator,
 	refreshAuthTokensWithoutDedupe,
-} from '@aws-amplify/auth/cognito';
+} from '@bpagoagadev/auth/cognito';
 import {
 	AuthConfig,
 	KeyValueStorageInterface,

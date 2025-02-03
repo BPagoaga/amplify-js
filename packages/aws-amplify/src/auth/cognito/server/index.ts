@@ -4,4 +4,4 @@
 /*
 This file maps exports from `aws-amplify/auth/cognito/server`. It provides access to server-enabled Cognito APIs.
 */
-export * from '@aws-amplify/auth/cognito/server';
+export * from '@bpagoagadev/auth/cognito/server';

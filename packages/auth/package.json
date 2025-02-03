@@ -1,6 +1,6 @@
 {
 	"name": "@bpagoagadev/auth",
-	"version": "6.11.8",
+	"version": "6.11.10",
 	"description": "Auth category of aws-amplify",
 	"main": "./dist/cjs/index.js",
 	"module": "./dist/esm/index.mjs",
@@ -93,11 +93,14 @@
 	"dependencies": {
 		"@aws-crypto/sha256-js": "5.2.0",
 		"@smithy/types": "^3.3.0",
-		"tslib": "^2.5.0"
+		"tslib": "^2.5.0",
+		"@capacitor/browser": "^4.0.0",
+		"@capacitor/device": "^4.0.0",
+		"@awesome-cordova-plugins/core": "^5.46.0",
+    "@awesome-cordova-plugins/ios-aswebauthenticationsession-api": "^5.46.0"
 	},
 	"peerDependencies": {
-		"@aws-amplify/core": "^6.1.0",
-		"@capacitor/browser": "^4.0.0"
+		"@aws-amplify/core": "^6.1.0"
 	},
 	"devDependencies": {
 		"@aws-amplify/core": "6.9.2",

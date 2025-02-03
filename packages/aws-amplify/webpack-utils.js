@@ -30,7 +30,7 @@
 const packageFolderMap = {
 	analytics: '@aws-amplify/analytics',
 	api: '@aws-amplify/api',
-	auth: '@aws-amplify/auth',
+	auth: '@bpagoagadev/auth',
 	'aws-amplify': 'aws-amplify',
 	core: '@aws-amplify/core',
 	datastore: '@aws-amplify/datastore',

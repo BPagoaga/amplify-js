@@ -5,12 +5,12 @@ import {
 	DefaultTokenStore,
 	TokenOrchestrator,
 	refreshAuthTokensWithoutDedupe,
-} from '@aws-amplify/auth/cognito';
+} from '@bpagoagadev/auth/cognito';
 import { AuthConfig, KeyValueStorageInterface } from '@aws-amplify/core';
 
 import { createUserPoolsTokenProvider } from '../../../../src/adapter-core';
 
-jest.mock('@aws-amplify/auth/cognito');
+jest.mock('@bpagoagadev/auth/cognito');
 
 const mockKeyValueStorage: KeyValueStorageInterface = {
 	setItem: jest.fn(),
