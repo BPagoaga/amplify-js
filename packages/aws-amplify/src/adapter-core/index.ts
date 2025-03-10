@@ -24,5 +24,5 @@ export {
 	validateState,
 	createKeysForAuthStorage,
 	AUTH_KEY_PREFIX,
-} from '@aws-amplify/auth/cognito';
+} from '@bpagoagadev/auth/cognito';
 export { DEFAULT_AUTH_TOKEN_COOKIES_MAX_AGE } from './constants';

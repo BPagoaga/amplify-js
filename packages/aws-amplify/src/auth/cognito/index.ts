@@ -2,6 +2,6 @@
 // SPDX-License-Identifier: Apache-2.0
 
 /*
-This file maps exports from `aws-amplify/auth/cognito`. It provides access to Cognito APIs.
+This file maps exports from `bpagoagadev/auth/cognito`. It provides access to Cognito APIs.
 */
-export * from '@aws-amplify/auth/cognito';
+export * from '@bpagoagadev/auth/cognito';

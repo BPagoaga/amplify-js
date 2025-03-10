@@ -1,6 +1,6 @@
-import { getCurrentUser } from 'aws-amplify/auth/server';
+import { getCurrentUser } from 'bpagoagadev/auth/server';
 import { NextRequest } from 'next/server';
-import { AuthUser } from 'aws-amplify/auth';
+import { AuthUser } from 'bpagoagadev/auth';
 import { NextApiRequest } from 'next';
 
 import {
@@ -10,7 +10,7 @@ import {
 import { NextServer } from '../../../src/types';
 import { createMockNextApiResponse } from '../testUtils';
 
-jest.mock('aws-amplify/auth/server');
+jest.mock('bpagoagadev/auth/server');
 
 const mockRunWithAmplifyServerContext =
 	jest.fn() as jest.MockedFunction<NextServer.RunOperationWithContext>;

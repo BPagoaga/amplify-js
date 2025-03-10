@@ -4,7 +4,7 @@
 import {
 	CognitoAWSCredentialsAndIdentityIdProvider,
 	DefaultIdentityIdStore,
-} from '@aws-amplify/auth/cognito';
+} from '@bpagoagadev/auth/cognito';
 import {
 	AuthConfig,
 	CredentialsAndIdentityIdProvider,

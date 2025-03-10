@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { NextRequest } from 'next/server';
-import { getCurrentUser } from 'aws-amplify/auth/server';
+import { getCurrentUser } from 'bpagoagadev/auth/server';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 import { NextServer } from '../../types';
