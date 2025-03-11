@@ -9,10 +9,10 @@ import * as analyticsKinesis from 'aws-amplify/analytics/kinesis';
 import * as analyticsPersonalize from 'aws-amplify/analytics/personalize';
 import * as analyticsFirehose from 'aws-amplify/analytics/kinesis-firehose';
 
-import * as auth from 'bpagoagadev/auth';
-import * as authCognito from 'bpagoagadev/auth/cognito';
-import * as authServer from 'bpagoagadev/auth/server';
-import * as authCognitoServer from 'bpagoagadev/auth/cognito/server';
+import * as auth from 'aws-amplify/auth';
+import * as authCognito from 'aws-amplify/auth/cognito';
+import * as authServer from 'aws-amplify/auth/server';
+import * as authCognitoServer from 'aws-amplify/auth/cognito/server';
 
 import * as storage from 'aws-amplify/storage';
 import * as storageServer from 'aws-amplify/storage/server';

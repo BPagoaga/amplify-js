@@ -3,11 +3,10 @@
 
 import { Browser } from '@capacitor/browser';
 import { Device } from '@capacitor/device';
-import { IosASWebauthenticationSession } from '@awesome-cordova-plugins/ios-aswebauthenticationsession-api';
 import { OpenAuthSession, OpenAuthSessionResult } from './types';
 
 export const openAuthSession: OpenAuthSession = async (url: string) => {
-// ORIGINAL IMPLEMENTATION START
+	// ORIGINAL IMPLEMENTATION START
 	//window.location.href = url.replace('http://', 'https://');
 	// ORIGINAL IMPLEMENTATION END
 
@@ -28,24 +27,26 @@ export const openAuthSession: OpenAuthSession = async (url: string) => {
 				encodeURIComponent(JSON.stringify(queryParams)),
 			);
 
-			return IosASWebauthenticationSession.start('jooxter', ssoUrl.toString())
-				.then((responseUrl: string) => {
-					return {
-						type: 'success' as OpenAuthSessionResult['type'],
-						url: responseUrl,
-					};
-				})
-				.catch((e: Error) => {
+			return window.plugins.ASWebAuthSession.start(
+				'jooxter',
+				ssoUrl.toString(),
+				(responseUrl: string) => {
+					console.log('SAML response', responseUrl);
+					window.location.href = responseUrl;
+				},
+				(e: Error) => {
 					console.error('Err saml', e.message);
 
 					return {
 						type: 'error' as OpenAuthSessionResult['type'],
 						error: e.message,
 					};
-				});
+				},
+			);
 		}
 		return await Browser.open({ url: secureUrl });
 	} else {
 		window.location.href = secureUrl;
 	}
-	// PATCHED IMPLEMENTATION END};
+	// PATCHED IMPLEMENTATION END
+};
